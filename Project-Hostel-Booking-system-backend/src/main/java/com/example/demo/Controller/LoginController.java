@@ -13,7 +13,7 @@ import com.example.demo.Service.OtpApplicationService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://hbs-frontend-2ujh.onrender.com")
 public class LoginController {
 
     @Autowired

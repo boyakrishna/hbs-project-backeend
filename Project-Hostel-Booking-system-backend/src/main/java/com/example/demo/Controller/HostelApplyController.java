@@ -34,7 +34,7 @@ import com.example.demo.entity.HostelApplication;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://hbs-frontend-2ujh.onrender.com")
 public class HostelApplyController {
 
     @Autowired
