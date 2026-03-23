@@ -21,13 +21,16 @@ public class LoginController {
 
 
    
-
     @PostMapping("/send-otp")
     public String sendOtp(@RequestParam String email){
 
-        otpService.sendOtp(email);
+        boolean sent = otpService.sendOtp(email);
 
-        return "OTP sent to email";
+        if(sent){
+            return "OTP sent to email";
+        } else {
+            return "Failed to send OTP";
+        }
     }
 
     @PostMapping("/verify-otp")
